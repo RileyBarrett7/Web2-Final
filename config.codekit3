@@ -19,6 +19,138 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/deploy/img/Header/marathon.png": {
+		"ft": 32768,
+		"iS": 23670,
+		"oA": 0,
+		"oAP": "/deploy/img/Header/marathon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Section1/Hero Image Copy.png": {
+		"ft": 32768,
+		"iS": 249984,
+		"oA": 0,
+		"oAP": "/deploy/img/Section1/Hero Image Copy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Section2/dunkin-fun-run-239x179-new-041719-c.png": {
+		"ft": 32768,
+		"iS": 3928,
+		"oA": 0,
+		"oAP": "/deploy/img/Section2/dunkin-fun-run-239x179-new-041719-c.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Section2/half marathon.png": {
+		"ft": 32768,
+		"iS": 19116,
+		"oA": 0,
+		"oAP": "/deploy/img/Section2/half marathon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Section2/Patriot.png": {
+		"ft": 32768,
+		"iS": 5740,
+		"oA": 0,
+		"oAP": "/deploy/img/Section2/Patriot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Section2/Rothman-Orthopaedics-239x179-c.png": {
+		"ft": 32768,
+		"iS": 3515,
+		"oA": 0,
+		"oAP": "/deploy/img/Section2/Rothman-Orthopaedics-239x179-c.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Section2/The Independence Challenge.png": {
+		"ft": 32768,
+		"iS": 12624,
+		"oA": 0,
+		"oAP": "/deploy/img/Section2/The Independence Challenge.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Section3/running.jpeg": {
+		"ft": 16384,
+		"iS": 58230,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Section3/running.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Section3/shirt1.jpeg": {
+		"ft": 16384,
+		"iS": 16385,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Section3/shirt1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Section3/shirt2.jpeg": {
+		"ft": 16384,
+		"iS": 21996,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Section3/shirt2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Section3/shirt3.jpeg": {
+		"ft": 16384,
+		"iS": 18035,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Section3/shirt3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Section4/runner-guy.jpeg": {
+		"ft": 16384,
+		"iS": 78930,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Section4/runner-guy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/index.html": {
 		"cB": 0,
 		"ft": 8192,
