@@ -30,6 +30,7 @@ header {
             grid-area: burger;
             justify-content: flex-end;
             padding: 20px;
+            color: $navy;
 
             @include lg {
                 display: none !important;
@@ -45,6 +46,12 @@ header {
             display: none;
             grid-area: nav;
             padding: 20px;
+            ul{
+                li{
+                    font-family: 'Montserrat', sans-serif;
+                    color: $navy;
+                }
+            }
 
             @include lg {
                 background-color: $white;

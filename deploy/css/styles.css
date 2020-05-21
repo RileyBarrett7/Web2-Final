@@ -325,6 +325,13 @@ ul {
 /* =============
     Typography
 ============= */
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2D384C; }
+
+h3, h4 {
+  font-family: 'Lato', sans-serif; }
+
 /* =============
     Buttons
 ============= */
@@ -394,7 +401,8 @@ header {
       display: flex;
       grid-area: burger;
       justify-content: flex-end;
-      padding: 20px; }
+      padding: 20px;
+      color: #2D384C; }
       @media (min-width: 992px) {
         header > div #burger-container {
           display: none !important; } }
@@ -405,6 +413,9 @@ header {
       display: none;
       grid-area: nav;
       padding: 20px; }
+      header > div #nav-container ul li {
+        font-family: 'Montserrat', sans-serif;
+        color: #2D384C; }
       @media (min-width: 992px) {
         header > div #nav-container {
           background-color: #fff;
@@ -415,12 +426,51 @@ header {
 /* =============
     Section 1 
 ============= */
-#section-1 img {
-  width: 100%; }
+#section-1 aside img {
+  width: 100%;
+  margin-top: 85px; }
 
 /* =============
     Section 2 
 ============= */
+#section-2 {
+  display: grid; }
+  #section-2 #section-2-title h1 {
+    text-align: center;
+    padding-bottom: none;
+    padding-top: 10px; }
+  #section-2 #cards ul {
+    display: grid;
+    gap: 39px; }
+    #section-2 #cards ul img {
+      width: 171px; }
+    @media (min-width: 768px) {
+      #section-2 #cards ul {
+        margin-right: 39px;
+        margin-left: 39px; }
+        #section-2 #cards ul img {
+          width: 207px; } }
+    @media (min-width: 992px) {
+      #section-2 #cards ul {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr); } }
+  #section-2 #cards li {
+    background-color: #F7F7FB;
+    height: 288px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      #section-2 #cards li {
+        height: 406px; } }
+    #section-2 #cards li aside {
+      background-color: #EF5F53;
+      width: 30%;
+      height: 35px;
+      color: #fff; }
+      #section-2 #cards li aside h4 {
+        text-align: center; }
+  @media (min-width: 768px) {
+    #section-2 #card1 {
+      grid-area: card1; } }
 /* =============
     Section 3 
 ============= */

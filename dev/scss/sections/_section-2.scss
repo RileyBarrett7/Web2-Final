@@ -2,3 +2,65 @@
     Section 2 
 ============= */
 
+#section-2 {
+    display: grid;
+
+
+    #section-2-title {
+        h1 {
+            text-align: center;
+            padding-bottom: none;
+            padding-top: 10px;
+        }
+    }
+
+    #cards {
+        ul {
+            img{
+                width: 171px;
+            }
+            display: grid;
+            gap: 39px;
+
+            @include md {
+                margin-right: 39px;
+                margin-left: 39px;
+                img{
+                    width: 207px;
+                }
+            }
+
+            @include lg {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+            }
+        }
+
+        li {
+            background-color: $gray;
+            height: 288px;
+            text-align: center;
+
+            @include md {
+                height: 406px;
+            }
+
+            aside {
+                background-color: $orange;
+                width: 30%;
+                height: 35px;
+                color: $white;
+                h4{
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+
+    #card1 {
+        @include md {
+            grid-area: card1;
+        }
+    }
+}
