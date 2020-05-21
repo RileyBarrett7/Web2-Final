@@ -5,56 +5,95 @@
 #section-2 {
     display: grid;
 
-
     #section-2-title {
         h1 {
             text-align: center;
             padding-bottom: none;
             padding-top: 10px;
+
+            @include md {
+                font-size: 2.5rem;
+            }
         }
     }
 
     #cards {
         ul {
-            img{
-                width: 171px;
-            }
-            display: grid;
-            gap: 39px;
-
             @include md {
-                margin-right: 39px;
-                margin-left: 39px;
-                img{
-                    width: 207px;
-                }
+                display: grid;
+                gap: 40px;
+                margin-right: 58px;
+                margin-left: 58px;
             }
 
             @include lg {
                 grid-template-columns: repeat(1, 1fr);
                 grid-template-rows: repeat(1, 1fr);
             }
-        }
 
-        li {
-            background-color: $gray;
-            height: 288px;
-            text-align: center;
+            li {
+                background-color: $gray;
+                text-align: center;
+                padding: 20px 0px;
+                margin-bottom: 39px;
 
-            @include md {
-                height: 406px;
-            }
-
-            aside {
-                background-color: $orange;
-                width: 30%;
-                height: 35px;
-                color: $white;
-                h4{
-                    text-align: center;
+                h2 {
+                    padding-bottom: 20px;
                 }
+
+                h4 {
+                    padding-bottom: 30px;
+                }
+
+                button {
+                    border: none;
+                    background-color: $orange;
+                    border-radius: 0;
+                    color: $white;
+                    width: 108px;
+                    height: 34px;
+                }
+
+                // display: grid;
+                // gap: 39px;
+                // @include md {
+                //     margin-right: 39px;
+                //     margin-left: 39px;
+                //     img{
+                //         width: 207px;
+                //     }
+                // }
+
+                // h4{
+                //     font-size: .9rem;
+                //     margin-top: 0px;
+                //     margin-bottom: 30px;
+                // }
+                // img{
+                //     width: 40%;
+                // }
+
+
+
+
+                // aside {
+                //     display: inline-flex;
+                //     flex-direction: row;
+                //     justify-content: center;
+                //     background-color: $orange;
+                //     width: 30%;
+                //     height: 30px;
+                //     color: $white;
+                //     h4{
+                //         font-size: .9rem;
+                //         margin-bottom: 0px;
+                //         margin-block-start: 6px;
+                //     }
+                // }
             }
         }
+
+
 
     }
 

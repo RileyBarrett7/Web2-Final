@@ -327,10 +327,12 @@ ul {
 ============= */
 h1, h2 {
   font-family: 'Montserrat', sans-serif;
-  color: #2D384C; }
+  color: #2D384C;
+  margin: 0; }
 
-h3, h4 {
-  font-family: 'Lato', sans-serif; }
+h3, h4, button {
+  font-family: 'Lato', sans-serif;
+  margin: 0; }
 
 /* =============
     Buttons
@@ -384,7 +386,8 @@ header {
   left: 0;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  border: 1px green solid; }
   header > div {
     display: grid;
     grid-template-areas: "logo burger" "nav nav";
@@ -395,7 +398,9 @@ header {
         grid-template-columns: 20% auto; } }
     header > div #logo-container {
       grid-area: logo;
-      padding: 20px; }
+      border: 1px orange solid; }
+      header > div #logo-container img {
+        width: 60%; }
     header > div #burger-container {
       align-items: center;
       display: flex;
@@ -428,7 +433,7 @@ header {
 ============= */
 #section-1 aside img {
   width: 100%;
-  margin-top: 85px; }
+  margin-top: 115px; }
 
 /* =============
     Section 2 
@@ -439,35 +444,35 @@ header {
     text-align: center;
     padding-bottom: none;
     padding-top: 10px; }
-  #section-2 #cards ul {
-    display: grid;
-    gap: 39px; }
-    #section-2 #cards ul img {
-      width: 171px; }
     @media (min-width: 768px) {
-      #section-2 #cards ul {
-        margin-right: 39px;
-        margin-left: 39px; }
-        #section-2 #cards ul img {
-          width: 207px; } }
-    @media (min-width: 992px) {
-      #section-2 #cards ul {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr); } }
-  #section-2 #cards li {
+      #section-2 #section-2-title h1 {
+        font-size: 2.5rem; } }
+  @media (min-width: 768px) {
+    #section-2 #cards ul {
+      display: grid;
+      gap: 40px;
+      margin-right: 58px;
+      margin-left: 58px; } }
+  @media (min-width: 992px) {
+    #section-2 #cards ul {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(1, 1fr); } }
+  #section-2 #cards ul li {
     background-color: #F7F7FB;
-    height: 288px;
-    text-align: center; }
-    @media (min-width: 768px) {
-      #section-2 #cards li {
-        height: 406px; } }
-    #section-2 #cards li aside {
+    text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 39px; }
+    #section-2 #cards ul li h2 {
+      padding-bottom: 20px; }
+    #section-2 #cards ul li h4 {
+      padding-bottom: 30px; }
+    #section-2 #cards ul li button {
+      border: none;
       background-color: #EF5F53;
-      width: 30%;
-      height: 35px;
-      color: #fff; }
-      #section-2 #cards li aside h4 {
-        text-align: center; }
+      border-radius: 0;
+      color: #fff;
+      width: 108px;
+      height: 34px; }
   @media (min-width: 768px) {
     #section-2 #card1 {
       grid-area: card1; } }
@@ -489,3 +494,5 @@ header {
 /* =============
     Section 5 
 ============= */
+#section-5 img {
+  width: 100%; }
