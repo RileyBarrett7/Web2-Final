@@ -1,3 +1,97 @@
 /* =============
     Footer
 ============= */
+#footer{
+    background-color: $navy;
+    padding-bottom: 32px;
+
+    #footer-title{
+        h1 {
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 40px;
+            color: $white;
+        }
+    }
+    #footer-subtitle{
+       h3{
+           color: $white;
+           text-align: center;
+           padding-bottom: 30px;
+           padding-top: 7px;
+       }
+       h4{
+        color: $white;
+        text-align: center;
+        padding-bottom: 10px;
+       }
+    }
+
+    #button-1{
+        li{
+            text-align: center;
+            list-style: none;
+            button{
+                background-color: $white;
+                border-radius: 0;
+                border: 0px;
+                width: 238px;
+                height: 31px;
+                text-align: center;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                h4{
+                    font-weight: 300;
+                    color: $dark-gray;
+                }
+            }
+        }
+    }
+    #button-2{
+        li{
+            text-align: center;
+            list-style: none;
+            button{
+                background-color: $orange;
+                border-radius: 0;
+                border: 0px;
+                width: 238px;
+                height: 31px;
+                text-align: center;
+                margin-bottom: 20px;
+                h4{
+                    font-weight: 300;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    #footer-icons{
+            color: $orange;
+            text-align: center;
+            list-style: none;
+
+        }
+    
+
+    #footer-title-2{
+        h2 {
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            color: $white;
+        }
+    }
+    p{
+        color: $white;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 22px;
+        line-height: 20px;
+        span{
+            color: $orange;
+            font-weight: 900;
+        }
+    }
+}

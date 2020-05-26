@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;300;900&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/048d179fd7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
@@ -18,9 +18,10 @@
     <header>
         <div>
             <section id="logo-container">
-                <h1><img src="img/Header/marathon.png" alt="logo"></h1>
+                <h1><img src="img/Header/marathon.svg" alt="logo"></h1>
             </section>  
         
+    
             <section id="burger-container">
                 <i class="fas fa-bars" id="burger-icon"></i>
             </section>
@@ -105,106 +106,170 @@
                 <section id="section-3-title">
                     <h1>Merchandise</h1>
                 </section>
-                <section>
+                <section id="section-3-hero">
                     <img src="img/Section-3/running.jpeg" alt="person running">
                     <h2>Official Marathon Gear</h2>
-                    <aside>
+                    <button>
                         <h4>Shop</h4>
-                    </aside>
+                    </button>
                 </section>
-                <section>
-                    <img src="img/Section-3/shirt1.jpeg" alt="shirt1">
-                    <h4>Shop</h4>
-                    <img src="img/Section-3/shirt2.jpeg" alt="shirt2">
-                    <h4>Shop</h4>
-                    <img src="img/Section-3/shirt3.jpeg" alt="shirt3">
-                    <h4>Shop</h4>
+                <section id="shirts">
+                    <ul>
+                        <li id="shirt1">
+                            <img src="img/Section-3/shirt1.jpeg" alt="shirt1">
+                            <button>
+                                <h4>Shop</h4>
+                            </button>
+                        </li>
+                        <li id="shirt2">
+                            <img src="img/Section-3/shirt2.jpeg" alt="shirt2">
+                            <button>
+                                <h4>Shop</h4>
+                            </button>
+                        </li>
+                        <li id="shirt3">
+                            <img src="img/Section-3/shirt3.jpeg" alt="shirt3">
+                            <button>
+                                <h4>Shop</h4>
+                            </button>
+                        </li>
+                    </ul>
                 </section>
             </section>
     <section id="section-4">
-                    <h1>FAQ</h1>
-                    <h3>How can we help you?</h2>
+                
+                    <section id="section-4-title">
+                        <h1>FAQ</h1>
+                        <h3>How can we help you?</h2>
+                            <li>
+                            <button>
+                                <h4>
+                                    <i class="fas fa-search"></i> Describe your issue...</h4>
+                            </button>
+                            </li>
                         <h2>Most Popular FAQ</h2>
-                        <section>
-                            <h1>1</h1>
-                            <h3>I deferred my 2019 registration. Can I use my deferral for the 2020 Philadelphia Challenge, and how do I
-                                go about doing it?</h3>
-                            <p>Yes. You should have receive an email sent on 11/27/19 with a link and instructions for deferral. If you
-                                did not receive the email, please contact info@philadelphiamarathon.com.</p>
-                        </section>
-                        <section>
-                            <h1>2</h1>
-                            <h3>May I register on race day?</h3>
-                            <p>No. There is no race day registration for the Challenge events, AACR Philadelphia Marathon, Dietz &
-                                Watson Half Marathon or Rothman Institute 8K. Only the Dunkin' Munchkin Run allows race day
-                                registration.</p>
-                        </section>
-                        <section>
-                            <h1>3</h1>
-                            <h3>Can a friend pick up my packet for me?</h3>
-                            <p>Yes. Your chosen representative can pick up your race materials for you if you provide him/her with a
-                                copy of your government-issued, photo ID. He/she will also be asked to show his/her own
-                                government-issued photo ID.</p>
-                        </section>
-                        <section>
-                            <h1>4</h1>
-                            <h3>Is the marathon walker-friendly?</h3>
-                            <p>Yes. The AACR Philadelphia Marathon is open to all competitors, with few restrictions. Please note that
-                                all participants must maintain a 16-minute per mile pace throughout the course.</p>
-                        </section>
-                        <section>
-                            <h1>5</h1>
-                            <h3>Can I transfer or switch my bib/registration to another person?</h3>
-                            <p>No. As noted in the application waiver that you signed during registration, bibs/registrations are
-                                non-transferable.</p>
-                        </section>
-                        <section>
-                            <h1>6</h1>
-                            <h3>Do I need a qualifying time to enter the ACCR Philadelphia Marathon?</h3>
-                            <p>No you do not need a qualifying time, everyone is welcome!</p>
-                        </section>
+                    </section>
+                
+                    <section id="questions">
+                        <ul>
+                
+                            <li id="q1">
+                                <button>
+                                    <h2>1</h2>
+                                </button>
+                                <h3>I deferred my 2019 registration. Can I use my deferral for the 2020 Philadelphia Challenge, and how
+                                    do I
+                                    go about doing it?</h3>
+                                <p>Yes. You should have receive an email sent on 11/27/19 with a link and instructions for deferral. If
+                                    you
+                                    did not receive the email, please contact info@philadelphiamarathon.com.</p>
+                            </li>
+                            <li id="q2">
+                                <button>
+                                    <h2>2</h2>
+                                </button>
+                                <h3>May I register on race day?</h3>
+                                <p>No. There is no race day registration for the Challenge events, AACR Philadelphia Marathon, Dietz &
+                                    Watson Half Marathon or Rothman Institute 8K. Only the Dunkin' Munchkin Run allows race day
+                                    registration.</p>
+                            </li>
+                            <li id="q3">
+                                <button>
+                                    <h2>3</h2>
+                                </button>
+                                <h3>Can a friend pick up my packet for me?</h3>
+                                <p>Yes. Your chosen representative can pick up your race materials for you if you provide him/her with a
+                                    copy of your government-issued, photo ID. He/she will also be asked to show his/her own
+                                    government-issued photo ID.</p>
+                            </li>
+                            <li id="q4">
+                                <button>
+                                    <h2>4</h2>
+                                </button>
+                                <h3>Is the marathon walker-friendly?</h3>
+                                <p>Yes. The AACR Philadelphia Marathon is open to all competitors, with few restrictions. Please note
+                                    that
+                                    all participants must maintain a 16-minute per mile pace throughout the course.</p>
+                            </li>
+                            <li id="q5">
+                                <button>
+                                    <h2>5</h2>
+                                </button>
+                                <h3>Can I transfer or switch my bib/registration to another person?</h3>
+                                <p>No. As noted in the application waiver that you signed during registration, bibs/registrations are
+                                    non-transferable.</p>
+                            </li>
+                            <li id="q6">
+                                <button>
+                                    <h2>6</h2>
+                                </button>
+                                <h3>Do I need a qualifying time to enter the ACCR Philadelphia Marathon?</h3>
+                                <p>No you do not need a qualifying time, everyone is welcome!</p>
+                            </li>
+                        </ul>
+                    </section>
                 </section>
     <section id="section-5">
                         <img src="img/Section-4/runner-guy.jpeg" alt="guy running">
-                        <h1>About</h1>
+                        <section id="section-5-title">
+                            <h1>About</h1>
+                        </section>
+                        
                         <p>The Philadelphia Marathon has grown tremendously since our first race in 1994. What started as a small local
                             event of just 1,500 participants has become one of the top-10 marathons in the country. Our beautiful and scenic
                             course takes runners past historic landmarks, through urban neighborhoods, and along Philadelphia's picturesque
-                            waterfronts. Of course, you can't forget the crowds.
+                            waterfronts. Of course, you can't forget the crowds.</p>
                     
-                            Each year, spectators line the course, eager to cheer on runners, because there's nothing we love more in this
-                            town than champions.
+                        <p>Each year, spectators line the course, eager to cheer on runners, because there's nothing we love more in this
+                            town than champions.</p>
                     
-                            Race Weekend 2020 features the AACR Philadelphia Marathon on Sunday, November 22; the Dietz & Watson Half
+                        <p>Race Weekend 2020 features the AACR Philadelphia Marathon on Sunday, November 22; the Dietz & Watson Half
                             Marathon, Rothman Orthopaedics 8K and Dunkin' Kids Fun Run on Saturday, November 21; and a free two-day Health &
-                            Fitness Expo on Friday, November 20 and Saturday, November 21.
+                            Fitness Expo on Friday, November 20 and Saturday, November 21.</p>
                     
-                            The Philadelphia Challenge is now closed! If you registered for the Philly Challenge, registration links for the
+                            <p> The Philadelphia Challenge is now closed! If you registered for the Philly Challenge, registration links for the
                             Blue Cross Broad Street Run 10-Miler will be emailed to you in February.</p>
                     </section>
     <footer id="footer">
-                            <h1>Dont miss out!</h1>
-                            <h3>Sign up for our newsletter</h3>
-                            <h4>Email Address:</h4>
-                            <div></div>
-                            <div>
-                                <h4>Sign up!</h4>
-                            </div>
-                            <div id="footer-icons">
-                                <i class="fab fa-instagram"></i>
-                                <i class="fab fa-facebook-f"></i>
-                                <i class="fab fa-twitter"></i>
-                                <section>
-                                    <h2>Our cause</h2>
-                                    <p>Join the American Association for Cancer Research (AACR) Runners for Research team! Make This Run Matter!
-                                        The AACR is the first and largest cancer research organization in the world and has been behind every
-                                        cancer breakthrough for more than 110 years.
+                            <section id="footer-title">
+                                <h1>Dont miss out!</h1>
+                            </section>
                         
-                                        Without research, there are no treatments or cures for patients, and with more than 37,000 members
-                                        worldwide, the AACR brings together the greatest minds in cancer science to defeat ALL types of cancer.
-                                    </p>
+                            <section id="footer-subtitle">
+                                <h3>Sign up for our newsletter</h3>
+                                <h4>Email Address:</h4>
+                            </section>
+                        
+                            <section id="button-1">
+                                <li>
+                                    <button>
+                                        <h4> johndoe@...</h4>
+                                    </button>
+                            </section>
+                        
+                            <section id="button-2">
+                                <li>
+                                    <button>
+                                        <h4>Sign up!</h4>
+                                    </button>
+                                </li>
+                            </section>
+                        
+                            <section id="footer-icons">
+                                   <i class="fab fa-instagram"></i>  <i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i>
+                            </section>
+                        
+                            <section>
+                                <section id="footer-title-2">
+                                    <h2>Our cause</h2>
                                 </section>
-                            </div>
+                                <p>Join the <span style="color: $orange;" style="font-weight: 900;"> American Association for Cancer Research (AACR) </span> Runners for Research team! Make This Run Matter!
+                                    The AACR is the first and largest cancer research organization in the world and has been behind every
+                                    cancer breakthrough for more than 110 years.</p>
+                        
+                                    <p>Without research, there are no treatments or cures for patients, and with more than 37,000 members
+                                    worldwide, the AACR brings together the greatest minds in cancer science to defeat ALL types of cancer.</p>
+                            </section>
                         </footer>
 
     <!-- jQuery -->

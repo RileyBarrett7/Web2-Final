@@ -30,6 +30,16 @@
                 grid-template-columns: repeat(1, 1fr);
                 grid-template-rows: repeat(1, 1fr);
             }
+            #card5{
+                h4{
+                    padding-top: 25px;
+                }
+            }
+            #card6{
+                h4{
+                    padding-top: 20px;
+                }
+            }
 
             li {
                 background-color: $gray;
@@ -43,6 +53,7 @@
 
                 h4 {
                     padding-bottom: 30px;
+                    font-weight: 400;
                 }
 
                 button {

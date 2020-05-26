@@ -330,7 +330,7 @@ h1, h2 {
   color: #2D384C;
   margin: 0; }
 
-h3, h4, button {
+h3, h4, p, button {
   font-family: 'Lato', sans-serif;
   margin: 0; }
 
@@ -386,8 +386,7 @@ header {
   left: 0;
   position: fixed;
   top: 0;
-  width: 100%;
-  border: 1px green solid; }
+  width: 100%; }
   header > div {
     display: grid;
     grid-template-areas: "logo burger" "nav nav";
@@ -397,10 +396,9 @@ header {
         grid-template-areas: "logo nav";
         grid-template-columns: 20% auto; } }
     header > div #logo-container {
-      grid-area: logo;
-      border: 1px orange solid; }
+      grid-area: logo; }
       header > div #logo-container img {
-        width: 60%; }
+        width: 40%; }
     header > div #burger-container {
       align-items: center;
       display: flex;
@@ -428,12 +426,77 @@ header {
 /* =============
     Footer
 ============= */
+#footer {
+  background-color: #2D384C;
+  padding-bottom: 32px; }
+  #footer #footer-title h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    color: #fff; }
+  #footer #footer-subtitle h3 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 7px; }
+  #footer #footer-subtitle h4 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px; }
+  #footer #button-1 li {
+    text-align: center;
+    list-style: none; }
+    #footer #button-1 li button {
+      background-color: #fff;
+      border-radius: 0;
+      border: 0px;
+      width: 238px;
+      height: 31px;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 10px; }
+      #footer #button-1 li button h4 {
+        font-weight: 300;
+        color: #919191; }
+  #footer #button-2 li {
+    text-align: center;
+    list-style: none; }
+    #footer #button-2 li button {
+      background-color: #EF5F53;
+      border-radius: 0;
+      border: 0px;
+      width: 238px;
+      height: 31px;
+      text-align: center;
+      margin-bottom: 20px; }
+      #footer #button-2 li button h4 {
+        font-weight: 300;
+        color: #fff; }
+  #footer #footer-icons {
+    color: #EF5F53;
+    text-align: center;
+    list-style: none; }
+  #footer #footer-title-2 h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #fff; }
+  #footer p {
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 22px;
+    line-height: 20px; }
+    #footer p span {
+      color: #EF5F53;
+      font-weight: 900; }
+
 /* =============
     Section 1 
 ============= */
 #section-1 aside img {
   width: 100%;
-  margin-top: 115px; }
+  margin-top: 20px; }
 
 /* =============
     Section 2 
@@ -457,6 +520,10 @@ header {
     #section-2 #cards ul {
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(1, 1fr); } }
+  #section-2 #cards ul #card5 h4 {
+    padding-top: 25px; }
+  #section-2 #cards ul #card6 h4 {
+    padding-top: 20px; }
   #section-2 #cards ul li {
     background-color: #F7F7FB;
     text-align: center;
@@ -465,7 +532,8 @@ header {
     #section-2 #cards ul li h2 {
       padding-bottom: 20px; }
     #section-2 #cards ul li h4 {
-      padding-bottom: 30px; }
+      padding-bottom: 30px;
+      font-weight: 400; }
     #section-2 #cards ul li button {
       border: none;
       background-color: #EF5F53;
@@ -485,14 +553,137 @@ header {
     width: 100%; }
   #section-3 #section-3-title h1 {
     text-align: center;
-    padding-bottom: none;
-    padding-top: 10px; }
+    padding-bottom: 20px; }
+  #section-3 #section-3-hero button {
+    border: none;
+    background-color: #EF5F53;
+    border-radius: 0;
+    color: #fff;
+    width: 71px;
+    height: 22px; }
+  @media (min-width: 768px) {
+    #section-3 #shirts ul {
+      display: grid;
+      gap: 40px;
+      margin-right: 58px;
+      margin-left: 58px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(1, 1fr); } }
+  @media (min-width: 992px) {
+    #section-3 #shirts ul {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(1, 1fr); } }
+  #section-3 #shirts ul li {
+    padding: 20px 0px;
+    text-align: center;
+    margin-bottom: 10px; }
+    #section-3 #shirts ul li button {
+      border: none;
+      background-color: #EF5F53;
+      border-radius: 0;
+      margin-top: 15px;
+      color: #fff;
+      width: 108px;
+      height: 34px; }
 
 /* =============
     Section 4 
 ============= */
+#section-4 {
+  display: grid;
+  background-color: #F7F7FB; }
+  #section-4 #section-4-title h1 {
+    text-align: center;
+    padding-bottom: none;
+    padding-top: 20px; }
+    @media (min-width: 768px) {
+      #section-4 #section-4-title h1 {
+        font-size: 2.5rem; } }
+  #section-4 #section-4-title h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  #section-4 #section-4-title h2 {
+    text-align: center; }
+  #section-4 #section-4-title li {
+    text-align: center;
+    list-style: none; }
+    #section-4 #section-4-title li button {
+      background-color: #fff;
+      border-radius: 0;
+      border: 3px #2D384C solid;
+      width: 281px;
+      height: 34px;
+      text-align: center;
+      margin-bottom: 20px; }
+      #section-4 #section-4-title li button h4 {
+        font-weight: 300; }
+  #section-4 #questions {
+    display: grid;
+    grid-template-columns: 2; }
+    @media (min-width: 768px) {
+      #section-4 #questions ul {
+        display: grid;
+        gap: 40px;
+        margin-right: 140px;
+        margin-left: 140px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr); } }
+    @media (min-width: 992px) {
+      #section-4 #questions ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr); } }
+    #section-4 #questions ul li {
+      padding: 20px 0px;
+      margin-bottom: 10px; }
+      #section-4 #questions ul li h3 {
+        padding-bottom: 25px;
+        padding-left: 85px;
+        margin-right: 20px;
+        line-height: 21px; }
+      #section-4 #questions ul li p {
+        padding-bottom: 10px;
+        padding-left: 85px;
+        margin-right: 20px;
+        line-height: 20px; }
+      #section-4 #questions ul li button {
+        border: none;
+        background-color: #2D384C;
+        border-radius: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 41px;
+        height: 41px; }
+        #section-4 #questions ul li button h2 {
+          color: #fff; }
+
 /* =============
     Section 5 
 ============= */
-#section-5 img {
-  width: 100%; }
+#section-5 {
+  margin-bottom: 30px; }
+  #section-5 img {
+    width: 100%; }
+  #section-5 #section-5-title h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px; }
+  #section-5 p {
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-bottom: 20px;
+    line-height: 22px; }
+    @media (min-width: 768px) {
+      #section-5 p {
+        margin-right: 91px;
+        margin-left: 91px; } }
+    @media (min-width: 992px) {
+      #section-5 p {
+        margin-right: 150px;
+        margin-left: 150px; } }
+    @media (min-width: 1200px) {
+      #section-5 p {
+        margin-right: 202px;
+        margin-left: 202px; } }

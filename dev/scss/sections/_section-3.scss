@@ -10,9 +10,58 @@
     #section-3-title{
         h1 {
             text-align: center;
-            padding-bottom: none;
-            padding-top: 10px;
+            padding-bottom: 20px;
         }
+
+    }
+
+    #section-3-hero{
+        button {
+            border: none;
+            background-color: $orange;
+            border-radius: 0;
+            color: $white;
+            width: 71px;
+            height: 22px;
+        }
+    }
+
+    #shirts{
+
+        ul{
+            @include md {
+                display: grid;
+                gap: 40px;
+                margin-right: 58px;
+                margin-left: 58px;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+            }
+
+            @include lg {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+            }
+
+            li{
+
+                padding: 20px 0px;
+                text-align: center;
+                margin-bottom: 10px;
+
+                button {
+                    border: none;
+                    background-color: $orange;
+                    border-radius: 0;
+                    margin-top: 15px;
+                    color: $white;
+                    width: 108px;
+                    height: 34px;
+                }
+            }
+        }
+
+
 
     }
 
