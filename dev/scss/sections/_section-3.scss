@@ -29,13 +29,19 @@
     #shirts{
 
         ul{
+            display: grid;
             @include md {
-                display: grid;
                 gap: 40px;
                 margin-right: 58px;
                 margin-left: 58px;
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(1, 1fr);
+                grid-template-rows: repeat(1,1fr);
+                //  grid-template-areas: 
+                //  "shirt1 shirt1 shirt2 shirt2" 
+                //  ". shirt3 shirt3 .";
+                
+            
+
             }
 
             @include lg {

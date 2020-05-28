@@ -423,6 +423,10 @@ header {
         header > div #nav-container {
           background-color: #fff;
           display: block !important; } }
+      header > div #nav-container a:hover ul li,
+      header > div #nav-container a:active ul li {
+        color: #EF5F53; }
+
 /* =============
     Footer
 ============= */
@@ -434,18 +438,36 @@ header {
     padding-bottom: 20px;
     padding-top: 40px;
     color: #fff; }
+    @media (min-width: 768px) {
+      #footer #footer-title h1 {
+        text-align: left;
+        padding-left: 50px;
+        font-size: 2.5rem; } }
   #footer #footer-subtitle h3 {
     color: #fff;
     text-align: center;
     padding-bottom: 30px;
     padding-top: 7px; }
+    @media (min-width: 768px) {
+      #footer #footer-subtitle h3 {
+        text-align: left;
+        padding-left: 50px;
+        padding-top: 30px; } }
   #footer #footer-subtitle h4 {
     color: #fff;
     text-align: center;
     padding-bottom: 10px; }
+    @media (min-width: 768px) {
+      #footer #footer-subtitle h4 {
+        text-align: left;
+        padding-left: 50px; } }
   #footer #button-1 li {
     text-align: center;
     list-style: none; }
+    @media (min-width: 768px) {
+      #footer #button-1 li {
+        text-align: left;
+        padding-left: 50px; } }
     #footer #button-1 li button {
       background-color: #fff;
       border-radius: 0;
@@ -461,6 +483,10 @@ header {
   #footer #button-2 li {
     text-align: center;
     list-style: none; }
+    @media (min-width: 768px) {
+      #footer #button-2 li {
+        text-align: left;
+        padding-left: 50px; } }
     #footer #button-2 li button {
       background-color: #EF5F53;
       border-radius: 0;
@@ -473,9 +499,32 @@ header {
         font-weight: 300;
         color: #fff; }
   #footer #footer-icons {
-    color: #EF5F53;
-    text-align: center;
-    list-style: none; }
+    display: flex;
+    flex-direction: row;
+    margin-left: 98px; }
+    @media (min-width: 768px) {
+      #footer #footer-icons {
+        margin-left: 314px; } }
+    #footer #footer-icons a:link,
+    #footer #footer-icons a:visited {
+      align-items: center;
+      border: 3px solid #EF5F53;
+      border-radius: 100px;
+      height: 40px;
+      width: 40px;
+      justify-content: center;
+      margin-top: 10px;
+      margin-right: 20px; }
+      #footer #footer-icons a:link div,
+      #footer #footer-icons a:visited div {
+        color: #EF5F53;
+        text-align: center; }
+    #footer #footer-icons a:hover,
+    #footer #footer-icons a:active {
+      background-color: #EF5F53; }
+      #footer #footer-icons a:hover div,
+      #footer #footer-icons a:active div {
+        color: #fff; }
   #footer #footer-title-2 h2 {
     text-align: center;
     padding-bottom: 20px;
@@ -561,30 +610,31 @@ header {
     color: #fff;
     width: 71px;
     height: 22px; }
-  @media (min-width: 768px) {
-    #section-3 #shirts ul {
-      display: grid;
-      gap: 40px;
-      margin-right: 58px;
-      margin-left: 58px;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(1, 1fr); } }
-  @media (min-width: 992px) {
-    #section-3 #shirts ul {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(1, 1fr); } }
-  #section-3 #shirts ul li {
-    padding: 20px 0px;
-    text-align: center;
-    margin-bottom: 10px; }
-    #section-3 #shirts ul li button {
-      border: none;
-      background-color: #EF5F53;
-      border-radius: 0;
-      margin-top: 15px;
-      color: #fff;
-      width: 108px;
-      height: 34px; }
+  #section-3 #shirts ul {
+    display: grid; }
+    @media (min-width: 768px) {
+      #section-3 #shirts ul {
+        gap: 40px;
+        margin-right: 58px;
+        margin-left: 58px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr); } }
+    @media (min-width: 992px) {
+      #section-3 #shirts ul {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr); } }
+    #section-3 #shirts ul li {
+      padding: 20px 0px;
+      text-align: center;
+      margin-bottom: 10px; }
+      #section-3 #shirts ul li button {
+        border: none;
+        background-color: #EF5F53;
+        border-radius: 0;
+        margin-top: 15px;
+        color: #fff;
+        width: 108px;
+        height: 34px; }
 
 /* =============
     Section 4 
