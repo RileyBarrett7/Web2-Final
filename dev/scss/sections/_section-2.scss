@@ -19,6 +19,13 @@
 
     #cards {
         ul {
+        a:hover,
+        a:active{
+            background-color: $orange;
+            div{
+                color: $white;
+            }
+        }
             @include md {
                 display: grid;
                 gap: 40px;
@@ -76,6 +83,7 @@
                 }
             }
         }
+        
     }
 
     #card1 {

@@ -562,6 +562,12 @@ header {
     @media (min-width: 768px) {
       #section-2 #section-2-title h1 {
         font-size: 2.5rem; } }
+  #section-2 #cards ul a:hover,
+  #section-2 #cards ul a:active {
+    background-color: #EF5F53; }
+    #section-2 #cards ul a:hover div,
+    #section-2 #cards ul a:active div {
+      color: #fff; }
   @media (min-width: 768px) {
     #section-2 #cards ul {
       display: grid;
@@ -656,11 +662,38 @@ header {
     position: absolute;
     bottom: 80px;
     padding-left: 30px; }
+    @media (min-width: 768px) {
+      #section-3 #section-3-hero .text {
+        bottom: 200px;
+        padding-left: 50px; } }
+    @media (min-width: 992px) {
+      #section-3 #section-3-hero .text {
+        bottom: 300px;
+        padding-left: 80px; } }
     #section-3 #section-3-hero .text h2 {
       color: #fff;
       line-height: 30px; }
+      @media (min-width: 768px) {
+        #section-3 #section-3-hero .text h2 {
+          font-size: 3rem;
+          line-height: 60px; } }
+      @media (min-width: 992px) {
+        #section-3 #section-3-hero .text h2 {
+          font-size: 5rem;
+          line-height: 90px; } }
     #section-3 #section-3-hero .text button {
       margin-top: 20px; }
+      @media (min-width: 768px) {
+        #section-3 #section-3-hero .text button {
+          width: 94px;
+          height: 31px;
+          font-size: 1.3rem; } }
+      @media (min-width: 768px) {
+        #section-3 #section-3-hero .text button {
+          margin-top: 50px;
+          width: 111px;
+          height: 34px;
+          font-size: 1.3rem; } }
   #section-3 #shirts ul {
     display: grid; }
     @media (min-width: 768px) {
