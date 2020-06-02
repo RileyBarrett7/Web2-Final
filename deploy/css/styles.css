@@ -518,6 +518,8 @@ header {
       #footer #footer-icons a:link div,
       #footer #footer-icons a:visited div {
         color: #EF5F53;
+        font-size: 22px;
+        padding-top: 9px;
         text-align: center; }
     #footer #footer-icons a:hover,
     #footer #footer-icons a:active {
@@ -528,10 +530,11 @@ header {
   #footer #footer-title-2 h2 {
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
     color: #fff; }
   #footer p {
     color: #fff;
+    padding-top: 10px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 22px;
@@ -564,11 +567,15 @@ header {
       display: grid;
       gap: 40px;
       margin-right: 58px;
-      margin-left: 58px; } }
+      margin-left: 58px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "card1 card2"  "card3 card4"  "card5 card6"; } }
   @media (min-width: 992px) {
     #section-2 #cards ul {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(1, 1fr); } }
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "card1 card2 card3"  "card4 card5 card6"; } }
   #section-2 #cards ul #card5 h4 {
     padding-top: 25px; }
   #section-2 #cards ul #card6 h4 {
@@ -593,6 +600,39 @@ header {
   @media (min-width: 768px) {
     #section-2 #card1 {
       grid-area: card1; } }
+  @media (min-width: 992px) {
+    #section-2 #card1 {
+      grid-area: card1; } }
+  @media (min-width: 768px) {
+    #section-2 #card2 {
+      grid-area: card2; } }
+  @media (min-width: 992px) {
+    #section-2 #card2 {
+      grid-area: card2; } }
+  @media (min-width: 768px) {
+    #section-2 #card3 {
+      grid-area: card3; } }
+  @media (min-width: 992px) {
+    #section-2 #card3 {
+      grid-area: card3; } }
+  @media (min-width: 768px) {
+    #section-2 #card4 {
+      grid-area: card4; } }
+  @media (min-width: 992px) {
+    #section-2 #card4 {
+      grid-area: card4; } }
+  @media (min-width: 768px) {
+    #section-2 #card5 {
+      grid-area: card5; } }
+  @media (min-width: 992px) {
+    #section-2 #card5 {
+      grid-area: card5; } }
+  @media (min-width: 768px) {
+    #section-2 #card6 {
+      grid-area: card6; } }
+  @media (min-width: 992px) {
+    #section-2 #card6 {
+      grid-area: card6; } }
 /* =============
     Section 3 
 ============= */
@@ -617,12 +657,14 @@ header {
         gap: 40px;
         margin-right: 58px;
         margin-left: 58px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr); } }
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "shirt1 shirt1 shirt2 shirt2"  ". shirt3 shirt3 ."; } }
     @media (min-width: 992px) {
       #section-3 #shirts ul {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr); } }
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: "shirt1 shirt2 shirt3"; } }
     #section-3 #shirts ul li {
       padding: 20px 0px;
       text-align: center;
@@ -635,7 +677,24 @@ header {
         color: #fff;
         width: 108px;
         height: 34px; }
-
+  @media (min-width: 768px) {
+    #section-3 #shirt1 {
+      grid-area: shirt1; } }
+  @media (min-width: 992px) {
+    #section-3 #shirt1 {
+      grid-area: shirt1; } }
+  @media (min-width: 768px) {
+    #section-3 #shirt2 {
+      grid-area: shirt2; } }
+  @media (min-width: 992px) {
+    #section-3 #shirt2 {
+      grid-area: shirt2; } }
+  @media (min-width: 768px) {
+    #section-3 #shirt3 {
+      grid-area: shirt3; } }
+  @media (min-width: 992px) {
+    #section-3 #shirt3 {
+      grid-area: shirt3; } }
 /* =============
     Section 4 
 ============= */
