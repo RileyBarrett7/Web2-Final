@@ -16,6 +16,7 @@
     }
 
     #section-3-hero{
+
         button {
             border: none;
             background-color: $orange;
@@ -23,6 +24,23 @@
             color: $white;
             width: 71px;
             height: 22px;
+            
+        }
+        .container {
+            position: relative; 
+            // text-align: center;
+        }
+        .text {
+            position: absolute;
+            bottom: 80px;
+            padding-left: 30px;
+            h2{
+                color: $white;
+                line-height: 30px;
+            }
+            button{
+                margin-top: 20px;
+            }
         }
     }
 
