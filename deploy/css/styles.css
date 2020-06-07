@@ -726,6 +726,8 @@ footer {
           font-size: 1.3rem; } }
   #section-3 #shirts ul {
     display: grid; }
+    #section-3 #shirts ul img {
+      width: 75%; }
     @media (min-width: 768px) {
       #section-3 #shirts ul {
         gap: 40px;
@@ -733,7 +735,9 @@ footer {
         margin-left: 58px;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "shirt1 shirt1 shirt2 shirt2"  ". shirt3 shirt3 ."; } }
+        grid-template-areas: "shirt1 shirt1 shirt2 shirt2"  ". shirt3 shirt3 ."; }
+        #section-3 #shirts ul img {
+          width: 100%; } }
     @media (min-width: 992px) {
       #section-3 #shirts ul {
         grid-template-columns: repeat(3, 1fr);
