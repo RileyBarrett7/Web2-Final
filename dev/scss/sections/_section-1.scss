@@ -3,10 +3,14 @@
 ============= */
 
 #section-1{
-    aside{
-    img{
-        width: 100%;
-        margin-top: 20px;
-    }
+    background-image: url("../img/Section-1/Hero.jpg");
+    background-position: center;
+    padding-top: 700px;
+    padding-bottom: 100px;
+    padding-right: 50px;
+    
+
+    @include md{
+        padding: 800px 0 180px;
     }
 }

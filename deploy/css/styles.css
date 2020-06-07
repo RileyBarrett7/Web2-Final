@@ -396,9 +396,16 @@ header {
         grid-template-areas: "logo nav";
         grid-template-columns: 20% auto; } }
     header > div #logo-container {
-      grid-area: logo; }
+      grid-area: logo;
+      padding-left: 20px; }
       header > div #logo-container img {
         width: 40%; }
+      @media (min-width: 768px) {
+        header > div #logo-container img {
+          width: 28%; } }
+      @media (min-width: 992px) {
+        header > div #logo-container img {
+          width: 50%; } }
     header > div #burger-container {
       align-items: center;
       display: flex;
@@ -576,10 +583,15 @@ footer {
 /* =============
     Section 1 
 ============= */
-#section-1 aside img {
-  width: 100%;
-  margin-top: 20px; }
-
+#section-1 {
+  background-image: url("../img/Section-1/Hero.jpg");
+  background-position: center;
+  padding-top: 700px;
+  padding-bottom: 100px;
+  padding-right: 50px; }
+  @media (min-width: 768px) {
+    #section-1 {
+      padding: 800px 0 180px; } }
 /* =============
     Section 2 
 ============= */
@@ -850,27 +862,37 @@ footer {
     Section 5 
 ============= */
 #section-5 {
-  margin-bottom: 30px; }
-  #section-5 img {
-    width: 100%; }
-  #section-5 #section-5-title h1 {
+  margin-bottom: 40px;
+  background-image: url("../img/Section-5/runner-guy.jpeg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 450px; }
+  @media (min-width: 992px) {
+    #section-5 {
+      padding-top: 800px; } }
+/* =============
+    Section 6 
+============= */
+#section-6 {
+  margin-bottom: 40px; }
+  #section-6 #section-6-title h1 {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px; }
-  #section-5 p {
+  #section-6 p {
     margin-right: 40px;
     margin-left: 40px;
     padding-bottom: 20px;
     line-height: 22px; }
     @media (min-width: 768px) {
-      #section-5 p {
+      #section-6 p {
         margin-right: 91px;
         margin-left: 91px; } }
     @media (min-width: 992px) {
-      #section-5 p {
+      #section-6 p {
         margin-right: 150px;
         margin-left: 150px; } }
     @media (min-width: 1200px) {
-      #section-5 p {
+      #section-6 p {
         margin-right: 202px;
         margin-left: 202px; } }

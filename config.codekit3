@@ -62,6 +62,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/Section-1/Hero.jpg": {
+		"ft": 16384,
+		"iS": 321744,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Section-1/Hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/Section-2/dunkin-fun-run-239x179-new-041719-c.png": {
 		"ft": 32768,
 		"iS": 3928,
@@ -161,12 +172,12 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/Section-4/runner-guy.jpeg": {
+	"/deploy/img/Section-5/runner-guy.jpeg": {
 		"ft": 16384,
 		"iS": 78930,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Section-4/runner-guy.jpg",
+		"oAP": "/deploy/img/Section-5/runner-guy.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -429,6 +440,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sections/_section-6.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-6.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -480,6 +504,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/section-5.html",
+		"oF": 0
+		},
+	"/dev/section-6.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/dev/section-6.html",
 		"oF": 0
 		}
 	},

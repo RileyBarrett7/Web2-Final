@@ -22,8 +22,19 @@ header {
 
         #logo-container {
             grid-area: logo;
+            padding-left: 20px;
             img{
                 width: 40%;
+            }
+            @include md{
+                img{
+                    width: 28%;
+                }
+            }
+            @include lg{
+                img{
+                    width: 50%;
+                }
             }
             // border: 1px orange solid;
         }
