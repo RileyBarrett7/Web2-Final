@@ -19,18 +19,11 @@
 
     #cards {
         ul {
-        a:hover,
-        a:active{
-            background-color: $orange;
-            div{
-                color: $white;
-            }
-        }
             @include md {
                 display: grid;
                 gap: 40px;
-                margin-right: 58px;
-                margin-left: 58px;
+                margin-right: 48px;
+                margin-left: 48px;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 1fr);
                 grid-template-areas: 
@@ -64,6 +57,12 @@
                 padding: 20px 0px;
                 margin-bottom: 39px;
 
+                button:hover,
+                button:active{
+                background-color: $light-orange;
+                color: $white;
+                }
+
                 h2 {
                     padding-bottom: 20px;
                 }
@@ -80,6 +79,7 @@
                     color: $white;
                     width: 108px;
                     height: 34px;
+
                 }
             }
         }

@@ -66,6 +66,11 @@ footer {
             text-align: center;
             padding-top: 26px;
             padding-left: 13px;
+            button:hover,
+                button:active{
+                background-color: $light-orange;
+                color: $white;
+                }
             p{
                 padding-bottom: 20px;
             }

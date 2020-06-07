@@ -65,6 +65,11 @@ header {
             
             ul{
                 li{
+                    a:hover,
+                    a:active{
+                    color: $orange;
+                    }
+        
                     font-family: 'Montserrat', sans-serif;
                     color: $navy;
                     text-align: center;
@@ -76,14 +81,6 @@ header {
                 background-color: $white;
                 display: block !important;
             }
-            a:hover,
-            a:active{
-            ul{
-                li{
-                    color: $orange;
-            }
-        }
-        }
     }
     }
 }

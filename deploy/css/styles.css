@@ -428,14 +428,13 @@ header {
         color: #2D384C;
         text-align: center;
         font-size: 1rem; }
+        header > div #nav-container ul li a:hover,
+        header > div #nav-container ul li a:active {
+          color: #EF5F53; }
       @media (min-width: 992px) {
         header > div #nav-container {
           background-color: #fff;
           display: block !important; } }
-      header > div #nav-container a:hover ul li,
-      header > div #nav-container a:active ul li {
-        color: #EF5F53; }
-
 /* =============
     Footer
 ============= */
@@ -488,6 +487,10 @@ footer {
       text-align: center;
       padding-top: 26px;
       padding-left: 13px; }
+      footer > div #form button:hover,
+      footer > div #form button:active {
+        background-color: #E7A29D;
+        color: #fff; }
       footer > div #form p {
         padding-bottom: 20px; }
       footer > div #form h4 {
@@ -604,18 +607,12 @@ footer {
     @media (min-width: 768px) {
       #section-2 #section-2-title h1 {
         font-size: 2.5rem; } }
-  #section-2 #cards ul a:hover,
-  #section-2 #cards ul a:active {
-    background-color: #EF5F53; }
-    #section-2 #cards ul a:hover div,
-    #section-2 #cards ul a:active div {
-      color: #fff; }
   @media (min-width: 768px) {
     #section-2 #cards ul {
       display: grid;
       gap: 40px;
-      margin-right: 58px;
-      margin-left: 58px;
+      margin-right: 48px;
+      margin-left: 48px;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       grid-template-areas: "card1 card2"  "card3 card4"  "card5 card6"; } }
@@ -633,6 +630,10 @@ footer {
     text-align: center;
     padding: 20px 0px;
     margin-bottom: 39px; }
+    #section-2 #cards ul li button:hover,
+    #section-2 #cards ul li button:active {
+      background-color: #E7A29D;
+      color: #fff; }
     #section-2 #cards ul li h2 {
       padding-bottom: 20px; }
     #section-2 #cards ul li h4 {
@@ -704,6 +705,10 @@ footer {
     position: absolute;
     bottom: 80px;
     padding-left: 30px; }
+    #section-3 #section-3-hero .text button:hover,
+    #section-3 #section-3-hero .text button:active {
+      background-color: #E7A29D;
+      color: #fff; }
     @media (min-width: 768px) {
       #section-3 #section-3-hero .text {
         bottom: 200px;
@@ -759,6 +764,10 @@ footer {
       padding: 20px 0px;
       text-align: center;
       margin-bottom: 10px; }
+      #section-3 #shirts ul li button:hover,
+      #section-3 #shirts ul li button:active {
+        background-color: #E7A29D;
+        color: #fff; }
       #section-3 #shirts ul li button {
         border: none;
         background-color: #EF5F53;
