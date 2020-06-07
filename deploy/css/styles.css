@@ -418,7 +418,9 @@ header {
       padding: 20px; }
       header > div #nav-container ul li {
         font-family: 'Montserrat', sans-serif;
-        color: #2D384C; }
+        color: #2D384C;
+        text-align: center;
+        font-size: 1rem; }
       @media (min-width: 992px) {
         header > div #nav-container {
           background-color: #fff;
@@ -430,118 +432,146 @@ header {
 /* =============
     Footer
 ============= */
-#footer {
+footer {
   background-color: #2D384C;
-  padding-bottom: 32px; }
-  #footer #footer-title h1 {
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 40px;
-    color: #fff; }
+  color: #fff;
+  display: grid;
+  grid-template-areas: ". footer .";
+  grid-template-columns: 30px auto 30px;
+  padding: 40px 0; }
+  @media (min-width: 1200px) {
+    footer {
+      grid-template-columns: auto 1200px auto;
+      padding: 80px 0; } }
+  footer > div {
+    grid-area: footer; }
     @media (min-width: 768px) {
-      #footer #footer-title h1 {
-        text-align: left;
-        padding-left: 50px;
-        font-size: 2.5rem; } }
-  #footer #footer-subtitle h3 {
-    color: #fff;
-    text-align: center;
-    padding-bottom: 30px;
-    padding-top: 7px; }
-    @media (min-width: 768px) {
-      #footer #footer-subtitle h3 {
-        text-align: left;
-        padding-left: 50px;
-        padding-top: 30px; } }
-  #footer #footer-subtitle h4 {
-    color: #fff;
-    text-align: center;
-    padding-bottom: 10px; }
-    @media (min-width: 768px) {
-      #footer #footer-subtitle h4 {
-        text-align: left;
-        padding-left: 50px; } }
-  #footer #button-1 li {
-    text-align: center;
-    list-style: none; }
-    @media (min-width: 768px) {
-      #footer #button-1 li {
-        text-align: left;
-        padding-left: 50px; } }
-    #footer #button-1 li button {
-      background-color: #fff;
-      border-radius: 0;
-      border: 0px;
-      width: 238px;
-      height: 31px;
-      text-align: center;
-      margin-bottom: 20px;
-      margin-top: 10px; }
-      #footer #button-1 li button h4 {
-        font-weight: 300;
-        color: #919191; }
-  #footer #button-2 li {
-    text-align: center;
-    list-style: none; }
-    @media (min-width: 768px) {
-      #footer #button-2 li {
-        text-align: left;
-        padding-left: 50px; } }
-    #footer #button-2 li button {
-      background-color: #EF5F53;
-      border-radius: 0;
-      border: 0px;
-      width: 238px;
-      height: 31px;
-      text-align: center;
-      margin-bottom: 20px; }
-      #footer #button-2 li button h4 {
-        font-weight: 300;
-        color: #fff; }
-  #footer #footer-icons {
-    display: flex;
-    flex-direction: row;
-    margin-left: 118px; }
-    @media (min-width: 768px) {
-      #footer #footer-icons {
-        margin-left: 314px; } }
-    #footer #footer-icons a:link,
-    #footer #footer-icons a:visited {
-      align-items: center;
-      border: 3px solid #EF5F53;
-      border-radius: 100px;
-      height: 40px;
-      width: 40px;
-      justify-content: center;
-      margin-top: 10px;
-      margin-right: 20px; }
-      #footer #footer-icons a:link div,
-      #footer #footer-icons a:visited div {
-        color: #EF5F53;
-        font-size: 22px;
-        padding-top: 9px;
+      footer > div {
+        display: grid;
+        gap: 20px;
+        grid-template-areas: "sign-up sign-up our-cause" "form social our-cause";
+        grid-template-columns: 25% 25% auto; } }
+    @media (min-width: 992px) {
+      footer > div {
+        grid-template-areas: "sign-up our-cause" "form social";
+        grid-template-columns: 30% auto; } }
+    footer > div #sign-up {
+      padding-left: 13px; }
+      @media (min-width: 768px) {
+        footer > div #sign-up {
+          grid-area: sign-up; }
+          footer > div #sign-up p {
+            padding-top: 25px; } }
+      footer > div #sign-up h1 {
+        font-size: 2.125rem;
+        color: #fff;
         text-align: center; }
-    #footer #footer-icons a:hover,
-    #footer #footer-icons a:active {
-      background-color: #EF5F53; }
-      #footer #footer-icons a:hover div,
-      #footer #footer-icons a:active div {
-        color: #fff; }
-  #footer #footer-title-2 h2 {
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 30px;
-    color: #fff; }
-  #footer p {
-    color: #fff;
-    padding-top: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 22px;
-    line-height: 20px; }
-    #footer p span {
-      color: #EF5F53;
-      font-weight: 900; }
+        @media (min-width: 768px) {
+          footer > div #sign-up h1 {
+            text-align: left; } }
+      footer > div #sign-up p {
+        font-size: 1.125rem;
+        font-weight: 700;
+        margin-top: 20px;
+        text-align: center; }
+        @media (min-width: 768px) {
+          footer > div #sign-up p {
+            text-align: left; } }
+    footer > div #form {
+      text-align: center;
+      padding-top: 26px;
+      padding-left: 13px; }
+      footer > div #form p {
+        padding-bottom: 20px; }
+      footer > div #form h4 {
+        font-weight: 400;
+        text-align: center; }
+      @media (min-width: 768px) {
+        footer > div #form {
+          grid-area: form;
+          padding-top: 5px; }
+          footer > div #form p {
+            text-align: left; } }
+      @media (min-width: 992px) {
+        footer > div #form {
+          margin-top: -80px; } }
+      footer > div #form #sign-up-input {
+        background-color: #fff;
+        color: #919191;
+        padding: 15px;
+        text-align: left; }
+        @media (min-width: 768px) {
+          footer > div #form #sign-up-input {
+            padding: 10px; } }
+      footer > div #form button {
+        background-color: #EF5F53;
+        border: none;
+        color: #fff;
+        margin-top: 20px;
+        padding: 15px 0;
+        width: 100%; }
+        @media (min-width: 768px) {
+          footer > div #form button {
+            padding: 10px; } }
+    @media (min-width: 768px) {
+      footer > div #social-icons {
+        grid-area: social;
+        margin-top: 75px; } }
+    @media (min-width: 992px) {
+      footer > div #social-icons {
+        padding-left: 137px;
+        padding-top: 17px; } }
+    @media (min-width: 992px) {
+      footer > div #social-icons {
+        margin-top: 0px; } }
+    footer > div #social-icons ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 25px; }
+      @media (min-width: 992px) {
+        footer > div #social-icons ul {
+          justify-content: flex-start;
+          margin-top: 0px; } }
+      footer > div #social-icons ul li {
+        margin: 0 10px; }
+        footer > div #social-icons ul li a:link,
+        footer > div #social-icons ul li a:visited {
+          align-items: center;
+          border: 2px solid #EF5F53;
+          border-radius: 100px;
+          color: #EF5F53;
+          display: flex;
+          font-size: 1.375rem;
+          height: 40px;
+          justify-content: center;
+          width: 40px;
+          text-decoration: none; }
+        footer > div #social-icons ul li a:hover,
+        footer > div #social-icons ul li a:active {
+          background-color: #EF5F53;
+          color: #fff; }
+    footer > div #our-cause {
+      margin-top: 35px; }
+      @media (min-width: 992px) {
+        footer > div #our-cause {
+          padding-left: 150px; } }
+      @media (min-width: 768px) {
+        footer > div #our-cause {
+          grid-area: our-cause;
+          margin-top: 0px; } }
+      footer > div #our-cause h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        color: #fff;
+        padding-bottom: 8px; }
+        @media (min-width: 768px) {
+          footer > div #our-cause h2 {
+            text-align: left; } }
+      footer > div #our-cause p {
+        margin-top: 20px; }
+        footer > div #our-cause p span {
+          color: #EF5F53;
+          font-weight: 600; }
 
 /* =============
     Section 1 

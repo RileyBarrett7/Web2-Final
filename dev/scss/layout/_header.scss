@@ -51,10 +51,13 @@ header {
             display: none;
             grid-area: nav;
             padding: 20px;
+            
             ul{
                 li{
                     font-family: 'Montserrat', sans-serif;
                     color: $navy;
+                    text-align: center;
+                    font-size: 1rem;
                 }
             }
 
