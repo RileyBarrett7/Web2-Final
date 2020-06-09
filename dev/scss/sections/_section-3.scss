@@ -41,7 +41,7 @@
             padding-left: 30px;
             button:hover,
                 button:active{
-                background-color: $light-orange;
+                background-color: $dark-orange;
                 color: $white;
                 }
             @include md{
@@ -118,7 +118,7 @@
                 margin-bottom: 10px;
                 button:hover,
                 button:active{
-                background-color: $light-orange;
+                background-color: $dark-orange;
                 color: $white;
                 }
 
