@@ -47,6 +47,7 @@ header {
             justify-content: flex-end;
             padding: 20px;
             color: $navy;
+            // border: 1px red solid;
 
             @include lg {
                 display: none !important;
@@ -74,6 +75,20 @@ header {
                     color: $navy;
                     text-align: center;
                     font-size: 1rem;
+
+                    // button{
+                    //     background-color: $white;
+                    //     border-radius: 0;
+                    //     border: 2px $navy solid;
+                    //     width: 281px;
+                    //     height: 28px;
+                    //     text-align: left;
+                    //     margin-right: 300px;
+                    //     margin-bottom: 20px;
+                    //     h4{
+                    //         font-weight: 300;
+                    //     }
+                    // }
                 }
             }
 

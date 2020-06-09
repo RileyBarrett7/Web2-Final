@@ -595,6 +595,9 @@ footer {
   @media (min-width: 768px) {
     #section-1 {
       padding: 800px 0 180px; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      padding-top: 650px; } }
 /* =============
     Section 2 
 ============= */
@@ -603,10 +606,13 @@ footer {
   #section-2 #section-2-title h1 {
     text-align: center;
     padding-bottom: none;
-    padding-top: 10px; }
+    padding-top: 20px; }
     @media (min-width: 768px) {
       #section-2 #section-2-title h1 {
         font-size: 2.5rem; } }
+    @media (min-width: 992px) {
+      #section-2 #section-2-title h1 {
+        padding-top: 40px; } }
   @media (min-width: 768px) {
     #section-2 #cards ul {
       display: grid;
@@ -623,13 +629,32 @@ footer {
       grid-template-areas: "card1 card2 card3"  "card4 card5 card6"; } }
   #section-2 #cards ul #card5 h4 {
     padding-top: 25px; }
+  @media (min-width: 992px) {
+    #section-2 #cards ul #card5 img {
+      padding-top: 35px;
+      padding-bottom: 15px;
+      width: 35%; } }
   #section-2 #cards ul #card6 h4 {
     padding-top: 20px; }
+  @media (min-width: 992px) {
+    #section-2 #cards ul #card6 img {
+      padding-top: 40px;
+      padding-bottom: 25px;
+      width: 43%; } }
   #section-2 #cards ul li {
     background-color: #F7F7FB;
     text-align: center;
     padding: 20px 0px;
     margin-bottom: 39px; }
+    @media (min-width: 768px) {
+      #section-2 #cards ul li {
+        margin-bottom: 0px; } }
+    @media (min-width: 992px) {
+      #section-2 #cards ul li {
+        margin-bottom: 0px; } }
+    @media (min-width: 1200px) {
+      #section-2 #cards ul li {
+        margin-bottom: 0px; } }
     #section-2 #cards ul li button:hover,
     #section-2 #cards ul li button:active {
       background-color: #E7A29D;
@@ -692,6 +717,12 @@ footer {
   #section-3 #section-3-title h1 {
     text-align: center;
     padding-bottom: 20px; }
+    @media (min-width: 768px) {
+      #section-3 #section-3-title h1 {
+        padding-top: 20px; } }
+    @media (min-width: 992px) {
+      #section-3 #section-3-title h1 {
+        padding-top: 40px; } }
   #section-3 #section-3-hero button {
     border: none;
     background-color: #EF5F53;

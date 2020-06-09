@@ -13,4 +13,7 @@
     @include md{
         padding: 800px 0 180px;
     }
+    @include lg{
+        padding-top: 650px;
+    }
 }
