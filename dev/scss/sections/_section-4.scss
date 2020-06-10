@@ -1,112 +1,91 @@
 /* =============
     Section 4 
 ============= */
-#section-4{
-display: grid;
-background-color: $gray;
-
-    #section-4-title{
-        h1 {
-            text-align: center;
-            padding-bottom: none;
-            padding-top: 20px;
-
-            @include md {
-                font-size: 2.5rem;
-            }
-        }
-        h3{
-            text-align: center;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        h2{
-            text-align: center;
-
-        }
-
-        li{
-            text-align: center;
-            list-style: none;
-
-            button{
-                background-color: $white;
-                border-radius: 0;
-                border: 3px $navy solid;
-                width: 281px;
-                height: 34px;
-                text-align: center;
-                margin-bottom: 20px;
-                h4{
-                    font-weight: 300;
-                }
-            }
-        }
-    }
-
-    #questions{
-        display: grid;
-        grid-template-columns: 2;
-
-        ul{
-            @include md {
-                display: grid;
-                gap: 40px;
-                margin-right: 140px;
-                margin-left: 140px;
-                grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: repeat(1, 1fr);
-            }
-
-            @include lg {
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(1, 1fr);
-            }
-
-            li{
-                padding: 20px 0px;
-                margin-bottom: 10px;
-
-                h3 {
-                    padding-bottom: 25px;
-                    padding-left: 85px;
-                    margin-right: 20px;
-                    line-height: 21px;
-                }
-
-                p {
-                    padding-bottom: 10px;
-                    padding-left: 85px;
-                    margin-right: 20px;
-                    line-height: 20px;
-                }
-
-                button {
-                    border: none;
-                    background-color: $navy;
-                    border-radius: 0;
-                    margin-left: 20px;
-                    margin-right: 20px;
-                    width: 41px;
-                    height: 41px;
-                    h2{
-                        color: $white;
-                    }
-                }
-
-            }
-
-        }
-    }
-
-
-
-
-
-
-
-
-
+#section-4 {
+	background-color: $gray;
+	display: grid;
+	#section-4-title {
+		h1 {
+			padding-bottom: none;
+			padding-top: 20px;
+			text-align: center;
+			@include md {
+				font-size: 2.5rem;
+			}
+			@include lg {
+				padding-top: 50px;
+			}
+		}
+		h3 {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 500;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			text-align: center;
+		}
+		h2 {
+			text-align: center;
+		}
+		li {
+			list-style: none;
+			text-align: center;
+			button {
+				background-color: $white;
+				border: 3px $navy solid;
+				border-radius: 0;
+				font-weight: 300;
+				height: 34px;
+				margin-bottom: 20px;
+				text-align: center;
+				width: 281px;
+			}
+		}
+	}
+	#questions {
+		display: grid;
+		grid-template-columns: 2;
+		ul {
+			@include md {
+				display: grid;
+				gap: 40px;
+				grid-template-columns: repeat(1, 1fr);
+				grid-template-rows: repeat(1, 1fr);
+				margin-left: 140px;
+				margin-right: 140px;
+			}
+			@include lg {
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(1, 1fr);
+			}
+			li {
+				margin-bottom: 10px;
+				padding: 20px 0px;
+				h3 {
+					line-height: 21px;
+					margin-right: 20px;
+					padding-bottom: 25px;
+					padding-left: 85px;
+				}
+				p {
+					line-height: 20px;
+					margin-right: 20px;
+					padding-bottom: 10px;
+					padding-left: 85px;
+				}
+				button {
+					background-color: $navy;
+					border: none;
+					border-radius: 0;
+					color: $white;
+					font-size: 1.5rem;
+					font-weight: 700;
+					height: 41px;
+					margin-left: 20px;
+					margin-right: 20px;
+					padding-left: 15px;
+					width: 41px;
+				}
+			}
+		}
+	}
 }

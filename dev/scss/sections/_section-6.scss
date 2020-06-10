@@ -1,38 +1,31 @@
 /* =============
     Section 6 
 ============= */
-#section-6{
-
-    margin-bottom: 40px;
-
-    #section-6-title{
-        h1 {
-            text-align: center;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }
-    }
-
-    p{
-        margin-right: 40px;
-        margin-left: 40px;
-        padding-bottom: 20px;
-        line-height: 22px;
-
-        @include md{
-            margin-right: 91px;
-            margin-left: 91px;
-        }
-        @include lg{
-            margin-right: 150px;
-            margin-left: 150px;
-        }
-        @include xl{
-            margin-right: 202px;
-            margin-left: 202px;
-        }
-    }
-
-
-
+#section-6 {
+	margin-bottom: 40px;
+	#section-6-title {
+		h1 {
+			padding-bottom: 20px;
+			padding-top: 20px;
+			text-align: center;
+		}
+	}
+	p {
+		line-height: 22px;
+		margin-left: 40px;
+		margin-right: 40px;
+		padding-bottom: 20px;
+		@include md {
+			margin-left: 91px;
+			margin-right: 91px;
+		}
+		@include lg {
+			margin-left: 150px;
+			margin-right: 150px;
+		}
+		@include xl {
+			margin-left: 202px;
+			margin-right: 202px;
+		}
+	}
 }

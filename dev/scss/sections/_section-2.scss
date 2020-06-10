@@ -1,163 +1,147 @@
 /* =============
     Section 2 
 ============= */
-
 #section-2 {
-    display: grid;
-
-    #section-2-title {
-        h1 {
-            text-align: center;
-            padding-bottom: none;
-            padding-top: 20px;
-
-            @include md {
-                font-size: 2.5rem;
-            }
-            @include lg{
-                padding-top: 40px;
-            }
-        }
-    }
-
-    #cards {
-        ul {
-            @include md {
-                display: grid;
-                gap: 40px;
-                margin-right: 48px;
-                margin-left: 48px;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                grid-template-areas: 
-                "card1 card2" 
+	display: grid;
+	#section-2-title {
+		h1 {
+			padding-bottom: none;
+			padding-top: 20px;
+			text-align: center;
+			@include md {
+				font-size: 2.5rem;
+			}
+			@include lg {
+				padding-top: 40px;
+			}
+		}
+	}
+	#cards {
+		ul {
+			@include md {
+				display: grid;
+				gap: 40px;
+				grid-template-areas: "card1 card2" 
                 "card3 card4" 
                 "card5 card6";
-            }
-
-            @include lg {
-                grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: repeat(2, 1fr);
-                grid-template-areas: 
-                "card1 card2 card3" 
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+				margin-left: 48px;
+				margin-right: 48px;
+			}
+			@include lg {
+				grid-template-areas: "card1 card2 card3" 
                 "card4 card5 card6";
-
-            }
-            #card5{
-                h4{
-                    padding-top: 25px;
-                }
-                @include lg{
-                    img{
-                        padding-top: 35px;
-                        padding-bottom: 15px;
-                        width: 35%;
-                    }
-                }
-            }
-            #card6{
-                h4{
-                    padding-top: 20px;
-                }
-                @include lg{
-                    img{
-                        padding-top: 40px;
-                        padding-bottom: 25px;
-                        width: 43%;
-                    }
-                }
-            }
-
-            li {
-                background-color: $gray;
-                text-align: center;
-                padding: 20px 0px;
-                margin-bottom: 20px;
-                @include md{
-                    margin-bottom: 0px;
-                }
-                @include lg{
-                    margin-bottom: 0px;
-                }
-                @include xl{
-                    margin-bottom: 0px;
-                }
-
-                button:hover,
-                button:active{
-                background-color: $dark-orange;
-                color: $white;
-                }
-
-                h2 {
-                    padding-bottom: 20px;
-                }
-
-                h4 {
-                    padding-bottom: 30px;
-                    font-weight: 400;
-                }
-
-                button {
-                    border: none;
-                    background-color: $orange;
-                    border-radius: 0;
-                    color: $white;
-                    width: 108px;
-                    height: 34px;
-
-                }
-            }
-        }
-        
-    }
-
-    #card1 {
-        @include md {
-            grid-area: card1;
-        }
-        @include lg {
-            grid-area: card1;
-        }
-    }
-    #card2 {
-        @include md {
-            grid-area: card2;
-        }
-        @include lg {
-            grid-area: card2;
-        }
-    }
-    #card3 {
-        @include md {
-            grid-area: card3;
-        }
-        @include lg {
-            grid-area: card3;
-        }
-    }
-    #card4 {
-        @include md {
-            grid-area: card4;
-        }
-        @include lg {
-            grid-area: card4;
-        }
-    }
-    #card5 {
-        @include md {
-            grid-area: card5;
-        }
-        @include lg {
-            grid-area: card5;
-        }
-    }
-    #card6 {
-        @include md {
-            grid-area: card6;
-        }
-        @include lg {
-            grid-area: card6;
-        }
-    }
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(2, 1fr);
+			}
+			#card5 {
+				h4 {
+					padding-top: 25px;
+				}
+				@include lg {
+					img {
+						padding-bottom: 15px;
+						padding-top: 35px;
+						width: 35%;
+					}
+				}
+			}
+			#card6 {
+				h4 {
+					padding-top: 20px;
+				}
+				@include lg {
+					img {
+						padding-bottom: 25px;
+						padding-top: 40px;
+						width: 43%;
+					}
+				}
+			}
+			li {
+				background-color: $gray;
+				margin-bottom: 20px;
+				padding: 20px 0px;
+				text-align: center;
+				@include md {
+					margin-bottom: 0px;
+				}
+				@include lg {
+					margin-bottom: 0px;
+				}
+				@include xl {
+					margin-bottom: 0px;
+				}
+				button:hover,
+                button:active {
+					background-color: $dark-orange;
+					color: $white;
+				}
+				h2 {
+					padding-bottom: 20px;
+				}
+				h4 {
+					font-weight: 400;
+					padding-bottom: 30px;
+				}
+				button {
+					background-color: $orange;
+					border: none;
+					border-radius: 0;
+					color: $white;
+					height: 34px;
+					width: 108px;
+				}
+			}
+		}
+	}
+	#card1 {
+		@include md {
+			grid-area: card1;
+		}
+		@include lg {
+			grid-area: card1;
+		}
+	}
+	#card2 {
+		@include md {
+			grid-area: card2;
+		}
+		@include lg {
+			grid-area: card2;
+		}
+	}
+	#card3 {
+		@include md {
+			grid-area: card3;
+		}
+		@include lg {
+			grid-area: card3;
+		}
+	}
+	#card4 {
+		@include md {
+			grid-area: card4;
+		}
+		@include lg {
+			grid-area: card4;
+		}
+	}
+	#card5 {
+		@include md {
+			grid-area: card5;
+		}
+		@include lg {
+			grid-area: card5;
+		}
+	}
+	#card6 {
+		@include md {
+			grid-area: card6;
+		}
+		@include lg {
+			grid-area: card6;
+		}
+	}
 }

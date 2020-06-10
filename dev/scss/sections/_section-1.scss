@@ -1,19 +1,16 @@
 /* =============
     Section 1 
 ============= */
-
-#section-1{
-    background-image: url("../img/Section-1/Hero.jpg");
-    background-position: center;
-    padding-top: 700px;
-    padding-bottom: 100px;
-    padding-right: 50px;
-    
-
-    @include md{
-        padding: 800px 0 180px;
-    }
-    @include lg{
-        padding-top: 650px;
-    }
+#section-1 {
+	background-image: url("../img/Section-1/Hero.jpg");
+	background-position: center;
+	padding-bottom: 100px;
+	padding-right: 50px;
+	padding-top: 700px;
+	@include md {
+		padding: 800px 0 180px;
+	}
+	@include lg {
+		padding-top: 650px;
+	}
 }

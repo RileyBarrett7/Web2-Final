@@ -408,11 +408,11 @@ header {
           width: 50%; } }
     header > div #burger-container {
       align-items: center;
+      color: #2D384C;
       display: flex;
       grid-area: burger;
       justify-content: flex-end;
-      padding: 20px;
-      color: #2D384C; }
+      padding: 20px; }
       @media (min-width: 992px) {
         header > div #burger-container {
           display: none !important; } }
@@ -424,10 +424,10 @@ header {
       grid-area: nav;
       padding: 20px; }
       header > div #nav-container ul li {
-        font-family: 'Montserrat', sans-serif;
         color: #2D384C;
-        text-align: center;
-        font-size: 1rem; }
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        text-align: center; }
         header > div #nav-container ul li a:hover,
         header > div #nav-container ul li a:active {
           color: #EF5F53; }
@@ -469,8 +469,8 @@ footer {
           footer > div #sign-up p {
             padding-top: 25px; } }
       footer > div #sign-up h1 {
-        font-size: 2.125rem;
         color: #fff;
+        font-size: 2.125rem;
         text-align: center; }
         @media (min-width: 768px) {
           footer > div #sign-up h1 {
@@ -484,9 +484,9 @@ footer {
           footer > div #sign-up p {
             text-align: left; } }
     footer > div #form {
-      text-align: center;
+      padding-left: 13px;
       padding-top: 26px;
-      padding-left: 13px; }
+      text-align: center; }
       footer > div #form button:hover,
       footer > div #form button:active {
         background-color: #B31609;
@@ -529,10 +529,6 @@ footer {
         margin-top: 75px; } }
     @media (min-width: 992px) {
       footer > div #social-icons {
-        padding-left: 137px;
-        padding-top: 17px; } }
-    @media (min-width: 992px) {
-      footer > div #social-icons {
         margin-top: 0px; } }
     footer > div #social-icons ul {
       display: flex;
@@ -554,8 +550,8 @@ footer {
           font-size: 1.375rem;
           height: 40px;
           justify-content: center;
-          width: 40px;
-          text-decoration: none; }
+          text-decoration: none;
+          width: 40px; }
         footer > div #social-icons ul li a:hover,
         footer > div #social-icons ul li a:active {
           background-color: #EF5F53;
@@ -570,10 +566,10 @@ footer {
           grid-area: our-cause;
           margin-top: 0px; } }
       footer > div #our-cause h2 {
-        font-size: 1.5rem;
-        text-align: center;
         color: #fff;
-        padding-bottom: 8px; }
+        font-size: 1.5rem;
+        padding-bottom: 8px;
+        text-align: center; }
         @media (min-width: 768px) {
           footer > div #our-cause h2 {
             text-align: left; } }
@@ -589,9 +585,9 @@ footer {
 #section-1 {
   background-image: url("../img/Section-1/Hero.jpg");
   background-position: center;
-  padding-top: 700px;
   padding-bottom: 100px;
-  padding-right: 50px; }
+  padding-right: 50px;
+  padding-top: 700px; }
   @media (min-width: 768px) {
     #section-1 {
       padding: 800px 0 180px; } }
@@ -604,9 +600,9 @@ footer {
 #section-2 {
   display: grid; }
   #section-2 #section-2-title h1 {
-    text-align: center;
     padding-bottom: none;
-    padding-top: 20px; }
+    padding-top: 20px;
+    text-align: center; }
     @media (min-width: 768px) {
       #section-2 #section-2-title h1 {
         font-size: 2.5rem; } }
@@ -617,35 +613,35 @@ footer {
     #section-2 #cards ul {
       display: grid;
       gap: 40px;
-      margin-right: 48px;
-      margin-left: 48px;
+      grid-template-areas: "card1 card2"  "card3 card4"  "card5 card6";
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
-      grid-template-areas: "card1 card2"  "card3 card4"  "card5 card6"; } }
+      margin-left: 48px;
+      margin-right: 48px; } }
   @media (min-width: 992px) {
     #section-2 #cards ul {
+      grid-template-areas: "card1 card2 card3"  "card4 card5 card6";
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: "card1 card2 card3"  "card4 card5 card6"; } }
+      grid-template-rows: repeat(2, 1fr); } }
   #section-2 #cards ul #card5 h4 {
     padding-top: 25px; }
   @media (min-width: 992px) {
     #section-2 #cards ul #card5 img {
-      padding-top: 35px;
       padding-bottom: 15px;
+      padding-top: 35px;
       width: 35%; } }
   #section-2 #cards ul #card6 h4 {
     padding-top: 20px; }
   @media (min-width: 992px) {
     #section-2 #cards ul #card6 img {
-      padding-top: 40px;
       padding-bottom: 25px;
+      padding-top: 40px;
       width: 43%; } }
   #section-2 #cards ul li {
     background-color: #F7F7FB;
-    text-align: center;
+    margin-bottom: 20px;
     padding: 20px 0px;
-    margin-bottom: 20px; }
+    text-align: center; }
     @media (min-width: 768px) {
       #section-2 #cards ul li {
         margin-bottom: 0px; } }
@@ -662,15 +658,15 @@ footer {
     #section-2 #cards ul li h2 {
       padding-bottom: 20px; }
     #section-2 #cards ul li h4 {
-      padding-bottom: 30px;
-      font-weight: 400; }
+      font-weight: 400;
+      padding-bottom: 30px; }
     #section-2 #cards ul li button {
-      border: none;
       background-color: #EF5F53;
+      border: none;
       border-radius: 0;
       color: #fff;
-      width: 108px;
-      height: 34px; }
+      height: 34px;
+      width: 108px; }
   @media (min-width: 768px) {
     #section-2 #card1 {
       grid-area: card1; } }
@@ -715,8 +711,8 @@ footer {
   #section-3 img {
     width: 100%; }
   #section-3 #section-3-title h1 {
-    text-align: center;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    text-align: center; }
     @media (min-width: 768px) {
       #section-3 #section-3-title h1 {
         padding-top: 20px; } }
@@ -724,18 +720,18 @@ footer {
       #section-3 #section-3-title h1 {
         padding-top: 40px; } }
   #section-3 #section-3-hero button {
-    border: none;
     background-color: #EF5F53;
+    border: none;
     border-radius: 0;
     color: #fff;
-    width: 71px;
-    height: 22px; }
+    height: 22px;
+    width: 71px; }
   #section-3 #section-3-hero .container {
     position: relative; }
   #section-3 #section-3-hero .text {
-    position: absolute;
     bottom: 80px;
-    padding-left: 30px; }
+    padding-left: 30px;
+    position: absolute; }
     #section-3 #section-3-hero .text button:hover,
     #section-3 #section-3-hero .text button:active {
       background-color: #B31609;
@@ -763,15 +759,10 @@ footer {
       margin-top: 20px; }
       @media (min-width: 768px) {
         #section-3 #section-3-hero .text button {
-          width: 94px;
-          height: 31px;
-          font-size: 1.3rem; } }
-      @media (min-width: 768px) {
-        #section-3 #section-3-hero .text button {
-          margin-top: 50px;
-          width: 111px;
+          font-size: 1.3rem;
           height: 34px;
-          font-size: 1.3rem; } }
+          margin-top: 50px;
+          width: 111px; } }
   #section-3 #shirts ul {
     display: grid; }
     #section-3 #shirts ul img {
@@ -779,34 +770,34 @@ footer {
     @media (min-width: 768px) {
       #section-3 #shirts ul {
         gap: 40px;
-        margin-right: 58px;
-        margin-left: 58px;
+        grid-template-areas: "shirt1 shirt1 shirt2 shirt2"  ". shirt3 shirt3 .";
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "shirt1 shirt1 shirt2 shirt2"  ". shirt3 shirt3 ."; }
+        margin-left: 58px;
+        margin-right: 58px; }
         #section-3 #shirts ul img {
           width: 100%; } }
     @media (min-width: 992px) {
       #section-3 #shirts ul {
+        grid-template-areas: "shirt1 shirt2 shirt3";
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-areas: "shirt1 shirt2 shirt3"; } }
+        grid-template-rows: repeat(1, 1fr); } }
     #section-3 #shirts ul li {
+      margin-bottom: 10px;
       padding: 20px 0px;
-      text-align: center;
-      margin-bottom: 10px; }
+      text-align: center; }
       #section-3 #shirts ul li button:hover,
       #section-3 #shirts ul li button:active {
         background-color: #B31609;
         color: #fff; }
       #section-3 #shirts ul li button {
-        border: none;
         background-color: #EF5F53;
+        border: none;
         border-radius: 0;
-        margin-top: 15px;
         color: #fff;
-        width: 108px;
-        height: 34px; }
+        height: 34px;
+        margin-top: 15px;
+        width: 108px; }
   @media (min-width: 768px) {
     #section-3 #shirt1 {
       grid-area: shirt1; } }
@@ -829,36 +820,38 @@ footer {
     Section 4 
 ============= */
 #section-4 {
-  display: grid;
-  background-color: #F7F7FB; }
+  background-color: #F7F7FB;
+  display: grid; }
   #section-4 #section-4-title h1 {
-    text-align: center;
     padding-bottom: none;
-    padding-top: 20px; }
+    padding-top: 20px;
+    text-align: center; }
     @media (min-width: 768px) {
       #section-4 #section-4-title h1 {
         font-size: 2.5rem; } }
+    @media (min-width: 992px) {
+      #section-4 #section-4-title h1 {
+        padding-top: 50px; } }
   #section-4 #section-4-title h3 {
-    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    padding-bottom: 20px;
     padding-top: 20px;
-    padding-bottom: 20px; }
+    text-align: center; }
   #section-4 #section-4-title h2 {
     text-align: center; }
   #section-4 #section-4-title li {
-    text-align: center;
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
     #section-4 #section-4-title li button {
       background-color: #fff;
-      border-radius: 0;
       border: 3px #2D384C solid;
-      width: 281px;
+      border-radius: 0;
+      font-weight: 300;
       height: 34px;
+      margin-bottom: 20px;
       text-align: center;
-      margin-bottom: 20px; }
-      #section-4 #section-4-title li button h4 {
-        font-weight: 300; }
+      width: 281px; }
   #section-4 #questions {
     display: grid;
     grid-template-columns: 2; }
@@ -866,37 +859,39 @@ footer {
       #section-4 #questions ul {
         display: grid;
         gap: 40px;
-        margin-right: 140px;
-        margin-left: 140px;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr); } }
+        grid-template-rows: repeat(1, 1fr);
+        margin-left: 140px;
+        margin-right: 140px; } }
     @media (min-width: 992px) {
       #section-4 #questions ul {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, 1fr); } }
     #section-4 #questions ul li {
-      padding: 20px 0px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      padding: 20px 0px; }
       #section-4 #questions ul li h3 {
+        line-height: 21px;
+        margin-right: 20px;
         padding-bottom: 25px;
-        padding-left: 85px;
-        margin-right: 20px;
-        line-height: 21px; }
+        padding-left: 85px; }
       #section-4 #questions ul li p {
-        padding-bottom: 10px;
-        padding-left: 85px;
+        line-height: 20px;
         margin-right: 20px;
-        line-height: 20px; }
+        padding-bottom: 10px;
+        padding-left: 85px; }
       #section-4 #questions ul li button {
-        border: none;
         background-color: #2D384C;
+        border: none;
         border-radius: 0;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 700;
+        height: 41px;
         margin-left: 20px;
         margin-right: 20px;
-        width: 41px;
-        height: 41px; }
-        #section-4 #questions ul li button h2 {
-          color: #fff; }
+        padding-left: 15px;
+        width: 41px; }
 
 /* =============
     Section 5 
@@ -916,23 +911,23 @@ footer {
 #section-6 {
   margin-bottom: 40px; }
   #section-6 #section-6-title h1 {
-    text-align: center;
     padding-bottom: 20px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    text-align: center; }
   #section-6 p {
-    margin-right: 40px;
+    line-height: 22px;
     margin-left: 40px;
-    padding-bottom: 20px;
-    line-height: 22px; }
+    margin-right: 40px;
+    padding-bottom: 20px; }
     @media (min-width: 768px) {
       #section-6 p {
-        margin-right: 91px;
-        margin-left: 91px; } }
+        margin-left: 91px;
+        margin-right: 91px; } }
     @media (min-width: 992px) {
       #section-6 p {
-        margin-right: 150px;
-        margin-left: 150px; } }
+        margin-left: 150px;
+        margin-right: 150px; } }
     @media (min-width: 1200px) {
       #section-6 p {
-        margin-right: 202px;
-        margin-left: 202px; } }
+        margin-left: 202px;
+        margin-right: 202px; } }

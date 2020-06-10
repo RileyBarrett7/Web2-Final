@@ -2,100 +2,72 @@
     Header
 ============= */
 header {
-    background-color: $white;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    // border: 1px green solid;
-
-    >div {
-        display: grid;
-        grid-template-areas: "logo burger"
+	background-color: $white;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	>div {
+		display: grid;
+		grid-template-areas: "logo burger"
             "nav nav";
-        grid-template-columns: 80% auto;
-
-        @include lg {
-            grid-template-areas: "logo nav";
-            grid-template-columns: 20% auto;
-        }
-
-        #logo-container {
-            grid-area: logo;
-            padding-left: 20px;
-            img{
-                width: 40%;
-            }
-            @include md{
-                img{
-                    width: 28%;
-                }
-            }
-            @include lg{
-                img{
-                    width: 50%;
-                }
-            }
-            // border: 1px orange solid;
-        }
-
-
-        #burger-container {
-            align-items: center;
-            display: flex;
-            grid-area: burger;
-            justify-content: flex-end;
-            padding: 20px;
-            color: $navy;
-            // border: 1px red solid;
-
-            @include lg {
-                display: none !important;
-            }
-
-            i {
-                cursor: pointer;
-            }
-        }
-
-        #nav-container {
-            background-color: $white;
-            display: none;
-            grid-area: nav;
-            padding: 20px;
-            
-            ul{
-                li{
-                    a:hover,
-                    a:active{
-                    color: $orange;
-                    }
-        
-                    font-family: 'Montserrat', sans-serif;
-                    color: $navy;
-                    text-align: center;
-                    font-size: 1rem;
-
-                    // button{
-                    //     background-color: $white;
-                    //     border-radius: 0;
-                    //     border: 2px $navy solid;
-                    //     width: 281px;
-                    //     height: 28px;
-                    //     text-align: left;
-                    //     margin-right: 300px;
-                    //     margin-bottom: 20px;
-                    //     h4{
-                    //         font-weight: 300;
-                    //     }
-                    // }
-                }
-            }
-
-            @include lg {
-                background-color: $white;
-                display: block !important;
-            }
-    }
-    }
+		grid-template-columns: 80% auto;
+		@include lg {
+			grid-template-areas: "logo nav";
+			grid-template-columns: 20% auto;
+		}
+		#logo-container {
+			grid-area: logo;
+			padding-left: 20px;
+			img {
+				width: 40%;
+			}
+			@include md {
+				img {
+					width: 28%;
+				}
+			}
+			@include lg {
+				img {
+					width: 50%;
+				}
+			}
+		}
+		#burger-container {
+			align-items: center;
+			color: $navy;
+			display: flex;
+			grid-area: burger;
+			justify-content: flex-end;
+			padding: 20px;
+			@include lg {
+				display: none !important;
+			}
+			i {
+				cursor: pointer;
+			}
+		}
+		#nav-container {
+			background-color: $white;
+			display: none;
+			grid-area: nav;
+			padding: 20px;
+			ul {
+				li {
+					color: $navy;
+					font-family: 'Montserrat', sans-serif;
+					font-size: 1rem;
+					text-align: center;
+					a:hover,
+                    a:active {
+						color: $orange;
+					}
+				}
+			}
+			@include lg {
+				background-color: $white;
+				display: block !important;
+			}
+		}
+	}
 }
